@@ -1,0 +1,15 @@
+<h1>Create a new event</h1>
+<% if logged_in? %>
+  <%= form_for(@event, url: event_new_path) do |f| %>
+    <%= f.label :event_name %>
+    <%= f.text_field :event_name %>
+
+    <%= f.label :date %>
+    <%= f.datetime_local_field :date %>
+
+    <%= f.text_area :description, placeholder: "Compose new micropost..." %>
+    <%= f.submit "Create event" %>
+  <% end %>
+<% else %>
+  You have to be logged in!
+<% end %>

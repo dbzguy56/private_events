@@ -2,6 +2,7 @@
   <nav>
     <% if logged_in? %>
       Hello, <%= current_user.name %>!
+      <%= link_to "New event", event_new_path %>
     <% else %>
       <%= link_to "Sign in", signin_path %>
     <% end %>

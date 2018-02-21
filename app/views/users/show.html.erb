@@ -1,1 +1,9 @@
-<h1>Events that you are attending:</h1><br>
+<h1>Events that you have created:</h1><br>
+
+<% if @user.events.any? %>
+  <ol>
+    <%= render @events %>
+  </ol>
+<% else %>
+  You have not created any events
+<% end %>

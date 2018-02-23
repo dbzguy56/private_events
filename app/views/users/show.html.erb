@@ -1,5 +1,5 @@
-<h1>Events that you have created:</h1><br>
-
+<h1>User: <%= @user.name %></h1>
+<h1>Events that you have created:</h1>
 <% if @user.events.any? %>
   <ol>
     <%= render @events %>
@@ -7,3 +7,7 @@
 <% else %>
   You have not created any events
 <% end %>
+<br>
+<h1>Events that you are attending:</h1><br>
+
+<%= render 'shared/events' %>

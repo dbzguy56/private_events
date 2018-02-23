@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attendee: one
+  event: one
+  creator: one
+
+two:
+  attendee: two
+  event: two
+  creator: two

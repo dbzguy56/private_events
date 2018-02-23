@@ -1,0 +1,19 @@
+<h2>Upcoming Events</h2>
+
+<% if @upcoming_events.any? %>
+  <ol>
+    <% @upcoming_events.each do |e| %>
+      <%= e.event_name %>
+    <% end %>
+  </ol>
+<% end %>
+
+<h2>Previous Events</h2>
+
+<% if @past_events.any? %>
+  <ol>
+    <% @past_events.each do |e| %>
+      <%= e.event_name %>
+    <% end %>
+  </ol>
+<% end %>
